@@ -15,13 +15,13 @@ func PascelsTri(x int) []*big.Int {
 			pt[1] = big.NewInt(1)
 		} else {
 			DpT := make([]*big.Int, x+1)
-			for j := 0; j < i + 1; j++ {
+			for j := 0; j < i+1; j++ {
 				//first number of new line
 				if j == 0 {
 					DpT[j] = big.NewInt(1)
 				} else if j == 1 { //second
 					DpT[j] = big.NewInt(int64(i))
-				} else if j == i - 1 { //second to last
+				} else if j == i-1 { //second to last
 					DpT[j] = big.NewInt(int64(i))
 				} else if j == i { //last number of new line
 					DpT[j] = big.NewInt(1)
