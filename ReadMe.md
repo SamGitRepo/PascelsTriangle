@@ -4,4 +4,8 @@ example:
 (a+b)^2 = a^2 + 2ab + b^2
 
 code:
-Pasc.PascelsTri(2) = big.int[]{1, 2, 1}
+Pasc.PascelsTri(2) = []int{1, 1}
+
+Pasc.PascelsTriBig(2) = []*big.Int{big.NewInt(1), big.NewInt(1)}
+
+there are to functions: PascelsTri and PascelsTriBig. PascelsTri returns and []int while PascelsTriBig returns []*big.Int. PascelsTriBig is for numbers too high for an int to store.
