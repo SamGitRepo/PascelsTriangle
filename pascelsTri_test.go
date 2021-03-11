@@ -8,7 +8,7 @@ import (
 	"reflect"
 )
 
-func TestPascelsTri(t *testing.T) {
+func TestPascelsTriBig(t *testing.T) {
 	var in int = 4
 	var want = []*big.Int{big.NewInt(1), big.NewInt(4), big.NewInt(6), big.NewInt(4), big.NewInt(1)}
 	got := PascelsTri(in)
