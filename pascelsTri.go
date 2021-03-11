@@ -2,7 +2,7 @@ package Pasc
 
 import "math/big"
 
-//This function take in an exponant and returns a list of Big Integers that are the coefficients in Pascel's Triangle. blah
+//This function take in an exponant and returns a list of Big Integers that are the coefficients in Pascel's Triangle.
 func PascelsTri(x int) []*big.Int {
 	pt := make([]*big.Int, x)
 	if x == 0 {
